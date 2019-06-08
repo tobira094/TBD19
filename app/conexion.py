@@ -3,8 +3,8 @@ import configparser
 
 CONFIG = configparser.ConfigParser()
 CONFIG.read('config.conf')
-USER = CONFIG['datos_conexion']['usuario']
-PASS = CONFIG['datos_conexion']['contra']
+USER = CONFIG['datos_conexion']['user']
+PASS = CONFIG['datos_conexion']['pass']
 
 try:
     conexion = psycopg2.connect(user = USER,
